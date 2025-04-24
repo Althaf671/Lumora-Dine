@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/delivery.css">
+    <title>Lumora Dine</title>
+</head>
+
+
+<nav>
+    <div class="background"></div>
+    <div class="center-nav">
+        <a href="/home.html">Home</a>
+        <a href="/about.html">About us</a>
+        <a href="/locations.html">Locations</a>
+        <a href="/contact.html">Contacts</a>
+    </div>
+
+    <div class="right-nav">
+        <ul>
+            <li>
+                <a href="#"> <img src="/asset/misc/settings_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                <ul class="sidebar">
+                    <li>
+                        <a href="#">Color</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header>
+    <h1>Delivery</h1>
+</header>
+
+<body>
+    <script src="/script/delivery.js"></script>
+    <div class="inner-body">
+        <div class="main-element">
+            <div class="left-side">
+                <img src="/asset/background/claudio-schwarz-4H9xt2DNgNc-unsplash.jpg">
+            </div>
+            <div class="right-side">
+                <h1>Standard</h1>
+                <p class="desc">Enjoy freshly prepared meals delivered within 30–60 minutes. This reliable and affordable option is perfect for everyday dining, 
+                    ensuring great taste and quality at your convenience.</p>
+                    <p class="location-tag">Choose your location</p>
+                    <div class="button-section">
+                        <!-- Location Buttons -->
+                        <button onclick="selectLocation(this, 'Indonesia')" class="location-btn">Indonesia</button>
+                        <button onclick="selectLocation(this, 'Germany')" class="location-btn">Germany</button>
+                        <button onclick="selectLocation(this, 'USA')" class="location-btn">United States</button>
+                    </div>
+                    <form id="delivery-form-standard" onsubmit="submitForm(event, 'deliveryType')">
+                        <label for="email-standard">Email:</label>
+                        <input type="email" placeholder="Your mail" id="user-email-standard" required>
+                </br>
+                    <label for="address-standard">Address:</label>
+                        <textarea style="width: 350px; height: 50px;" placeholder="Your Address" id="user-message-standard" required></textarea>
+                    </form>
+                    <div class="cost">
+                        <h3>Cost</h3>
+                        <p class="number">$ 0.29</p>
+                    </div>
+                    <button type="submit" class="submit" >Submit</button>
+            </div>
+        </div>
+        <div class="main-element">
+            <div class="left-side">
+                <img src="/asset/background/grab-W_UiSLqthaU-unsplash.jpg">
+            </div>
+            <div class="right-side">
+                <h1>Premium</h1>
+                <p class="desc">Get your meals faster with Premium Delivery, arriving within 20–40 minutes.
+                     This service prioritizes your order, keeping your food hot, fresh, and delivered with care.</p>
+                    <p class="location-tag">Choose your location</p>
+                    <div class="button-section">
+                        <!-- Location Buttons -->
+                        <button onclick="selectLocation(this, 'Indonesia')" class="location-btn">Indonesia</button>
+                        <button onclick="selectLocation(this, 'Germany')" class="location-btn">Germany</button>
+                        <button onclick="selectLocation(this, 'USA')" class="location-btn">United States</button>
+                    </div>
+                    <form id="delivery-form-standard" onsubmit="submitForm(event, 'deliveryType')">
+                        <label for="email-standard">Email:</label>
+                        <input type="email" placeholder="Your mail" id="user-email-standard" required>
+                </br>
+                    <label for="address-standard">Address:</label>
+                        <textarea style="width: 350px; height: 50px;" placeholder="Your Address" id="user-message-standard" required></textarea>
+                    </form>
+                    <div class="cost">
+                        <h3>Cost</h3>
+                        <p class="number">$ 0.49</p>
+                    </div>
+                    <button type="submit" class="submit">Submit</button>
+            </div>
+        </div>
+        <div class="main-element">
+            <div class="left-side">
+                <img src="/asset/background/arno-senoner-4jLpCkGqClE-unsplash.jpg">
+            </div>
+            <div class="right-side">
+                <h1>VIP</h1>
+                <p class="desc">Indulge in the ultimate service with VIP Delivery. Your meals are given top priority and delivered within 15–30 minutes, 
+                    complete with premium packaging and exceptional care for a luxurious dining experience.</p>
+                    <p class="location-tag">Choose your location</p>
+                    <div class="button-section">
+                        <!-- Location Buttons -->
+                        <button onclick="selectLocation(this, 'Indonesia')" class="location-btn">Indonesia</button>
+                        <button onclick="selectLocation(this, 'Germany')" class="location-btn">Germany</button>
+                        <button onclick="selectLocation(this, 'USA')" class="location-btn">United States</button>
+                    </div>
+                    <form id="delivery-form-standard" onsubmit="submitForm(event, 'deliveryType')">
+                        <label for="email-standard">Email:</label>
+                        <input type="email" placeholder="Your mail" id="user-email-standard" required>
+                </br>
+                    <label for="address-standard">Address:</label>
+                        <textarea style="width: 350px; height: 50px;" placeholder="Your Address" id="user-message-standard" required></textarea>
+                    </form>
+                    <div class="cost">
+                        <h3>Cost</h3>
+                        <p class="number">$ 0.79</p>
+                    </div>
+                    <button type="submit" class="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="/script/delivery.js"></script>
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="left-footer">
+            <div class="footer-logo">
+            <a href="/about.html"> <img src="/asset/misc/logo.jpeg"></a>
+            </div>
+            <div class="footer-logo-name">
+                <h2>Lumora Dine</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ratione iste error earum.</p>
+                <a href="#"><img src="/asset/misc/instagram.svg"></a>
+                <a href="#"><img src="/asset//misc/youtube.svg"></a>
+                <a href="#"><img src="/asset//misc/facebook.svg"></a>
+            </div>
+        </div>
+
+        <div class="half-footer">
+            <div class="center-footer">
+                <h2>Branches</h2>
+                <div class="branch">
+                    <p>Pahlawan Street, Sukamerta, Indonesia</p>
+                    <p>14 Lindenweg, Steinhafen, Germany</p>
+                    <p>Maple Street, Ridgewood Valley, USA</p>
+                </div>
+            </div>
+        
+            <div class="right-footer">
+                <h2>Contact</h2>
+                <div class="right-footer-img">
+                    <img src="/asset/misc/call_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                    <a href="#">Phone</a>
+                </div>
+                <div class="right-footer-img">
+                    <img src="/asset/misc/mail_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                    <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2024 Lumora Dine. All rights reserved.</p>
+</footer>

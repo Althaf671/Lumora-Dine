@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/home.css">
+    <title>Lumora Dine</title>
+</head>
+
+
+<nav>
+    <div class="left-nav">
+        <a href="/about.html"><img src="/asset/misc/logo.jpeg"></a>
+     </div>
+
+    <div class="center-nav">
+        <a href="/about.html">About us</a>
+        <a href="/delivery.html">Delivery</a>
+        <a href="/locations.html">Locations</a>
+        <a href="/contact.html">Contacts</a>
+    </div>
+
+    <div class="right-nav">
+        <ul>
+            <li>
+                <a href="#"> <img src="/asset/misc/settings_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg"></a>
+                <ul class="sidebar">
+                    <li>
+                        <a href="#">Color</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="left-body">
+        <h1>Savor the Light of Culinary Excellence</h1>
+        <p>At <strong>Lumora Dine</strong>, we bring together the art of fine dining and the warmth of modern hospitality. Inspired by the brilliance of light, our restaurant offers a vibrant yet elegant atmosphere where every dish is crafted to perfection. From flavorful starters to exquisite main courses and delightful desserts, Lumora Dine promises a culinary journey that tantalizes your taste buds and leaves a lasting impression.
+            Whether you're celebrating a special occasion or enjoying a casual meal, Lumora Dine is your destination for unforgettable dining experiences. </p>
+        <div class="shop">
+            <button onclick="" id="minus-btn">Shop</button>
+        </div>
+        <div class="list">
+            <h3>Filter by:</h3>
+            <a id="foodLink" href="#">&#9657; Food</a>
+            <a id="beverageLink" href="#">&#9657; Beverage</a>
+            <a id="dessertLink" href="#">&#9657; Dessert</a>
+        </div>
+    </div>
+
+    <div class="right-body">
+        <h1 id="quantityInput">Burger<br><span class="top-price">$2.99</span></h1>
+        <img src="/asset/food/pexels-david-geib-1265112-3220617.jpg">
+    </div>
+
+    <div class="offers">
+        <p>Delights from Our kitchen</p>
+    </div>
+
+    <div class="main-body" id="foodDiv">
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-caricatte-2336674.jpg">
+            <p class="price" id="priceId">$1.99</p>
+            <div class="name">
+                <p>Tacos</p>
+                    <div class="weight">
+                        <p>150g</p>
+                    </div>
+                <button onclick="addToCart(1, 'item 1', '$1.99', '150g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-david-geib-1265112-3220617.jpg">
+            <p class="price" id="priceId">$2.99</p>
+            <div class="name">
+                <p>Burger</p>
+                <div class="weight">
+                    <p>250g</p>
+                </div>
+                <button onclick="addToCart(2, 'item 2', '$2.99', '250g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-ehioma-osih-109764575-11743998.jpg">
+            <p class="price" id="priceId">$2.99</p>
+            <div class="name">
+                <p>Fried Rice</p>
+                <div class="weight">
+                    <p>400g</p>
+                </div>
+                <button onclick="addToCart(3, 'item 3', '$2.99', '400g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-jdgromov-12419160.jpg">
+            <p class="price" id="priceId">$3.99</p>
+            <div class="name">
+                <p>Paella</p>
+                <div class="weight">
+                    <p>450g</p>
+                </div>
+                <button onclick="addToCart(4, 'item 4', '$3.99', '450g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-natalie-bond-320378-3911229.jpg">
+            <p class="price" id="priceId">$1.99</p>
+            <div class="name">
+                <p>Dimsum</p>
+                <div class="weight">
+                        <p>150g</p>
+                    </div>
+                    <button onclick="addToCart(5, 'item 5', '$1.99', '150g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-peyman-hamsayeh-7161623-11286814.jpg">
+            <p class="price" id="priceId">$2.99</p>
+            <div class="name">
+                <p>Kebab</p>
+                <div class="weight">
+                    <p>300g</p>
+                </div>
+                <button onclick="addToCart(6, 'item 6', '$2.99', '300g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pizza/pexels-abrar-27874930.jpg">
+            <p class="price" id="priceId">$4.99</p>
+            <div class="name">
+                <p>Pizza</p>
+                <div class="weight">
+                    <p>700g</p>
+                </div>
+                <button onclick="addToCart(7, 'item 7', '$4.99', '700g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/steak/pexels-cristian-rojas-7613436.jpg">
+            <p class="price" id="priceId">$5.99</p>
+            <div class="name">
+                <p>Steak</p>
+                <div class="weight">
+                    <p>500g</p>
+                </div>
+                <button onclick="addToCart(8, 'item 8', '$5.99', '500g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-pixabay-271715.jpg">
+            <p class="price" id="priceId">$2.99</p>
+            <div class="name">
+                <p>Sushi</p>
+                <div class="weight">
+                    <p>240g</p>
+                </div>
+                <button onclick="addToCart(9, 'item 9', '$2.99', '240g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-polina-tankilevitch-4518844.jpg">
+            <p class="price" id="priceId">$2.99</p>
+            <div class="name">
+                <p>Pasta</p>
+                <div class="weight">
+                    <p>350g</p>
+                </div>
+                <button onclick="addToCart(10, 'item 10', '$2.99', '350g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-xmtnguyen-2664216.jpg">
+            <p class="price" id="priceId">$4.99</p>
+            <div class="name">
+                <p>Ramen</p>
+                <div class="weight">
+                    <p>700g</p>
+                </div>
+                <button onclick="addToCart(11, 'item 11', '$1.99', '150g')">Add</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="inner-card">
+                <img src="/asset/food/pexels-baarast-project-243124132-15853315.jpg">
+            <p class="price" id="priceId">$3.99</p>
+            <div class="name">
+                <p>Meatball Soup</p>
+                <div class="weight">
+                    <p>500g</p>
+                </div>
+                <button onclick="addToCart(12, 'item 12', '$1.99', '150g')">Add</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <span id="cart-notification">0</span>
+        <a href="/cart.html" onclick="viewCart()"><img src="/asset/misc/shopping_basket_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg"></a>
+    </div>
+    <script src="/script/home.js"></script>
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="left-footer">
+            <div class="footer-logo">
+            <a href="/about.html"> <img src="/asset/misc/logo.jpeg"></a>
+            </div>
+            <div class="footer-logo-name">
+                <h2>Lumora Dine</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, ratione iste error earum.</p>
+                <a href="#"><img src="/asset/misc/instagram.svg"></a>
+                <a href="#"><img src="/asset//misc/youtube.svg"></a>
+                <a href="#"><img src="/asset//misc/facebook.svg"></a>
+            </div>
+        </div>
+
+        <div class="half-footer">
+            <div class="center-footer">
+                <h2>Branches</h2>
+                <div class="branch">
+                    <p>Pahlawan Street, Sukamerta, Indonesia</p>
+                    <p>14 Lindenweg, Steinhafen, Germany</p>
+                    <p>Maple Street, Ridgewood Valley, USA</p>
+                </div>
+            </div>
+        
+            <div class="right-footer">
+                <h2>Contact</h2>
+                <div class="right-footer-img">
+                    <img src="/asset/misc/call_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                    <a href="#">Phone</a>
+                </div>
+                <div class="right-footer-img">
+                    <img src="/asset/misc/mail_24dp_FFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                    <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2024 Lumora Dine. All rights reserved.</p>
+</footer>
+</html>
+
